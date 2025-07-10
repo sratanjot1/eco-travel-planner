@@ -35,7 +35,7 @@ if page == "🏠 Home":
     st.title("🌿 Welcome to Eco Travel Planner")
     col1, col2 = st.columns([1, 1])
     with col1:
-        st_lottie(load_lottie(r"C:\Users\srata\OneDrive\Desktop\SAP Project\frontend\animations\eco_leaf.json"), height=400)
+        st_lottie(load_lottie("frontend/animations/eco_leaf.json"), height=400)
     with col2:
         st.markdown("""
         ### About Eco Travel Planner
@@ -135,7 +135,7 @@ elif page == "📊 Insights & Booking":
 # --- Chat Bot Page ---
 elif page == "🤖 Chat Bot":
     st.markdown("## 🤖 Ask Your Eco Travel Bot")
-    st_lottie(load_lottie(r"C:\Users\srata\OneDrive\Desktop\SAP Project\frontend\animations\eco_leaf.json"), height=200)
+    st_lottie(load_lottie("frontend/animations/eco_leaf.json"), height=200)
     st.markdown("#### 🌿 How can I help with your sustainable trip today?")
 
     prompt = st.text_input("Type your eco travel question here...")

@@ -6,7 +6,7 @@ import google.generativeai as genai
 load_dotenv()
 
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))  # type: ignore
-model = genai.GenerativeModel("gemini-2.5-flash)  # type: ignore
+model = genai.GenerativeModel("gemini-2.5-flash")  # type: ignore
 
 def get_eco_plan(destination, days, budget, preferences, people_count=1, children_count=0):
     prefs = ", ".join(preferences) if preferences else "no specific preferences"
